@@ -1,7 +1,35 @@
-body {
-  padding-top: 50px;
+#title {
+    font-size: 40px;
 }
-.starter-template {
-  padding: 40px 15px;
-  text-align: center;
+
+.bg-1 {
+    background-color: #FF9933; /* Light Orange */
+    color: #000000;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+.bg-2 {
+    background-color: #474e5d; /* Dark Blue */
+    color: #ffffff;
+}
+
+.bg-3 {
+    background-color: #ffffff; /* White */
+    color: #555555;
+    font-size: 30px;
+}
+
+.container-fluid {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#reach {
+    font-size: 30px;
+}
+
+.contact {
+    color: #0000FF;
+    font-family: serif;
 }
