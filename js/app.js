@@ -1,4 +1,4 @@
-window.human = false;
+window.human = true;
 
 var canvasEl = document.querySelector('.fireworks');
 var ctx = canvasEl.getContext('2d');
@@ -129,4 +129,4 @@ function autoClick() {
   anime({duration: 2000}).finished.then(autoClick);
 }
 
-autoClick();setCanvasSize();window.addEventListener('resize', setCanvasSize, false);
+setCanvasSize();window.addEventListener('resize', setCanvasSize, false);
