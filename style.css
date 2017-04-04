@@ -43,7 +43,7 @@ canvas {
     z-index:-10;
 }
 .fireworks{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Boulder.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("boulder.jpg");
 }
 p {
     max-width: 650px;
