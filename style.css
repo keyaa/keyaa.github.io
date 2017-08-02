@@ -46,7 +46,7 @@ canvas {
     background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("boulder.jpg");
 }
 p {
-    max-width: 650px;
+    max-width: 675px;
     text-align: justify;
 }
 img {
