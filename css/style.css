@@ -32,7 +32,7 @@ h1{
     font-size: 20px;
 }
 hr {
-    width: 50%;
+    width: 46%;
 }
 canvas {
     position:absolute;
@@ -43,10 +43,10 @@ canvas {
     z-index:-10;
 }
 .fireworks{
-    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("boulder.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../img/boulder.jpg");
 }
 p {
-    max-width: 675px;
+    max-width: 600px;
     text-align: justify;
 }
 img {
