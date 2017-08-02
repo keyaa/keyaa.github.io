@@ -32,7 +32,7 @@ h1{
     font-size: 20px;
 }
 hr {
-    width: 45%;
+    width: 50%;
 }
 canvas {
     position:absolute;
@@ -66,14 +66,13 @@ a:hover {
 }
 .tooltip .tooltiptext {
     visibility: hidden;
-    width: 300px;
+    width: 100px; 
     top: 100%;
     left: 50%;
-    margin-left: -150px;
+    margin-left: -50px;
     text-align: center;
     padding: 5px 0;
     border-radius: 6px;
-
     position: absolute;
     z-index: 1;
 }
