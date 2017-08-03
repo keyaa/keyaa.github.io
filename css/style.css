@@ -49,7 +49,7 @@ p {
     max-width: 600px;
     text-align: justify;
 }
-img {
+.icon {
 	height:auto;
     max-width:4%;
 }
