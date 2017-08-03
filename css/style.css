@@ -66,11 +66,10 @@ a:hover {
 }
 .tooltip .tooltiptext {
     visibility: hidden;
-    width: 100px; 
+    width: 200px;
     top: 100%;
     left: 50%;
-    margin-left: -50px;
-    text-align: center;
+    margin-left: -100px;
     padding: 5px 0;
     border-radius: 6px;
     position: absolute;
