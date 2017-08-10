@@ -1,0 +1,69 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    border: 0px;
+    overflow-x: hidden;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.text {
+	text-align: right;
+    margin: auto;
+    color: white;
+    position: relative;
+    font-family: Arial;
+    font-size:16px;
+}
+.button {
+    position: relative;
+    width: 146px;
+    height: 146px;
+    border: 2px solid white;
+}
+.playArea {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -225px;
+    margin-top: -225px;
+    width: 450px;
+    height: 450px;
+    border: 2px solid white;
+}
+.topleft {
+
+}
+.topmid {
+    margin-left: 150px;
+    margin-top: -150px;
+}
+.topright {
+    margin-left: 300px;
+    margin-top: -150px;
+}
+.midleft {
+
+}
+.midmid {
+    margin-left: 150px;
+    margin-top: -150px;
+}
+.midright {
+    margin-left: 300px;
+    margin-top: -150px;
+}
+.botleft {
+}
+.botmid {
+    margin-left: 150px;
+    margin-top: -150px;
+}
+.botright {
+    margin-left: 300px;
+    margin-top: -150px;
+}
