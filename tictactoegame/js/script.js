@@ -24,12 +24,12 @@ function switchMode(x)
     if (singleplayer)
     {
         singleplayer = false;
-        x.src = "img/x.png"
+        x.src = "img/2p.png"
     }
     else
     {
         singleplayer = true;
-        x.src = "img/o.png"
+        x.src = "img/1p.png"
     }
     hardreset();
 }
