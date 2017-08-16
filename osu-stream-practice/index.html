@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/ouch.ico">
+    <title>my hand, IT BURNS!!</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"/></script>
+    <script src="js/jquery.canvasjs.min.js"></script>
+    <script src="js/newmain.js"></script>
+    <script src="http://cwilso.github.io/AudioContext-MonkeyPatch/AudioContextMonkeyPatch.js"></script>
+    <script src="js/metronome.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body style="background-color: pink">
+    <div class="title">
+       <img style="vertical-align:middle;"src="img/osuHand.png"></img>
+       <span>osu! stream practice<span>
+    </div>
+    <div class="aboutgame">
+       <hr style="width:650px;color:white;border-width:2px;">
+       <p style="font-size: 24px;">What is this?</p>
+       <p><a href="https://en.wikipedia.org/wiki/Osu!">osu!</a> is a free-to-play rhythm game in which 2 keys are tapped to the beats of various songs.
+       "Streaming" is when the keys are alternated to hit a successive stream of notes. This site was designed to help players to improve their streaming
+       stamina and consistency.</p>
+       <br>
+    </div>
+    <form class="elements">
+        Keys: 
+        <input type="text" class="inputbutton" id="key1" maxlength="1" value="z" onkeyup="updatevalues(event)"/>
+        <input type="text" class="inputbutton" id="key2" maxlength="1" value="x" onkeyup="updatevalues(event)"/> Time (seconds):
+        <input type="text" class="inputbutton" id="seconds" maxlength="3" value="30" onkeyup="updatevalues(event)"/> BPM:
+        <input type="text" class="inputbutton" id="BPM" maxlength="3" value="120" onkeyup="updatevalues(event)"/> 
+        <input type="button" class="inputbutton" id="reset" value="Reset" onClick="resetvalues()">
+        <br>
+        <div id="status"> Press Enter to ready the test.</div>
+    </form>
+    <div class="elements" id="Result1"> Total Clicks: 0</div>
+    <div class="elements" id="Result2"> Current Speed: 0 BPM</div>
+    <div class="elements" id="Result3"> Unstable Rate: 0 </div>
+    <div class="elements">
+        <img id="hiterror" src=""></img>
+    </div>
+    </div>
+    <div id="chartContainer" class="elements" style="width:650px;height:300px;margin-bottom:15px;margin-top:15px"></div>
+    <p style="font-size:18px;text-align:center">Original by <a href="https://github.com/arctic5/osuStreamSpeed.js" target="_blank">arctic</a>, rewritten by <a href="https://github.com/ckrisirkc/osuStreamSpeed.js" target="_blank">Ckris</a>, presented by <a href="https://github.com/keyaa/osu-stream-practice" target="_blank">keyaa</a>. Metronome by <a href="https://github.com/cwilso/metronome" target="_blank">cwilso</a>.</p>
+</body>
+</html>

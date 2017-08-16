@@ -1,0 +1,94 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    border: 0px;
+    overflow-x: hidden;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.title {
+    position: relative;
+    font-size: 48px;
+    font-family: Arial;
+    color: white;
+    top: 3%;
+    left:25%;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px #444;
+}
+.aboutgame {
+    position: relative;
+    font-family: Arial;
+    font-size: 20px;
+    max-width: 650px;
+    top:3%;
+    left:25%;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #444;
+}
+a {
+    color: MediumSlateBlue;
+    text-shadow: 0 0 0 #444;
+}
+.elements {
+    margin: 5px;
+    position: relative;
+    font-family: Arial;
+    font-size: 20px;
+    left:25%;
+    color: black;
+    font-weight: bold;
+}
+#key1 {
+    width: 30px;
+    height: 30px;
+    text-align:center;
+    margin: 0px 0px 0px 0px;
+}
+#key2 {
+    width: 30px;
+    height: 30px;
+    text-align:center;
+    margin: 0px 5px 0px 0px;
+}
+#reset {
+    -webkit-appearance: none; 
+    background-color: white;
+    width:50px;
+    height:30px;
+    margin-left: 10px;
+}
+#seconds {
+    width: 40px;
+    height: 30px;
+    text-align:center;
+}
+#BPM {
+    width: 40px;
+    height: 30px;
+    text-align: center;
+}
+#status {
+    position: relative;
+    font-size: 28px;
+    text-align: left;
+    color: white;
+    text-shadow: 1px 1px 3px #444;
+    margin: 20px 0px 20px 0px;
+    left: 0px;
+}
+#hiterror {
+    position: absolute;
+    margin: 0px 0px 10px 450px;
+    bottom: 0px;
+}
+.inputbutton {
+    margin: 0px 15px 20px 0px;
+}
