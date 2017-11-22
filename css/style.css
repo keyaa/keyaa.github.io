@@ -4,14 +4,15 @@ body {
 }
 
 #skip {
+	opacity: .65;
 	background-color: #141414;
 	border: 1px solid white;
 	color: white;
 	font-size: 18px;
-	padding: 10px 15px 10px 15px;
+	padding: 5px 10px 5px 10px;
 	position: relative;
-	left: 520px;
-	top: 120px;
+	left: 530px;
+	top: 110px;
 	transition-duration: .4s;
 }
 #skip:hover {
@@ -27,10 +28,7 @@ body {
 #css {
 	color: #85c1e9;
 }
-#doc {
-	color: #85c1e9;
-}
-#img {
+#html5up-astral {
 	color: #85c1e9;
 }
 #js {
