@@ -3,6 +3,21 @@ body {
 	background-color: black;
 }
 
+#skip {
+	background-color: #141414;
+	border: 1px solid white;
+	color: white;
+	font-size: 18px;
+	padding: 10px 15px 10px 15px;
+	position: relative;
+	left: 520px;
+	top: 120px;
+	transition-duration: .4s;
+}
+#skip:hover {
+	background-color: white;
+	color: #141414;
+}
 #linetwo {
 	color: #85c1e9;
 }
