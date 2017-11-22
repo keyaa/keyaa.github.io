@@ -6,6 +6,7 @@
 	<link rel="icon" href="img/terminal.ico">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script src="js/typed.js/lib/typed.min.js" type="text/javascript"></script>
+	<meta charset="UTF-8">
 </head> 
 <body> 
 	<!-- css shell from: https://guides.codechewing.com/mac-terminal-shell-css-html -->
@@ -14,32 +15,59 @@
 		<ul class="shell-body">
 			<span id="user0">kevin@yang:~$ </span><span id="lineone"></span>
 			<br>
-			<span id="user1"></span><span id="linetwo"></span>
+			<span id="linetwo"></span>
 			<br>
-			<span id="user2"></span><span id="linethree"></span>
+			<span id="linethree"></span>
 			<br>
-			<span id="user3"></span><span id="linefour"></span>
+			<span id="user1"></span><span id="linefour"></span>
+			<br>
+			<span id="user2"></span><span id="linefive"></span>
+			<br>
+			<span id="user3"></span><span id="linesix"></span>
+			<br>
+			<span id="lineseven"></span>
 			<br>
 		</ul>
 	</div>
 	<!-- typing effect from https://github.com/mattboldt/typed.js/ -->
 	<script>
-		var firsttype = {
-			strings: ["cd Desktop"],
-			typeSpeed: 50,
-			startDelay: 750,
+		var firsttype = new Typed("#lineone", {
+			strings: ["ls"],
+			typeSpeed: 75,
+			startDelay: 800,
 			cursorChar: "_",
 			onComplete: function(self) {
+				$("#user0").html("kevin@yang:~$ ls");
+				$("#linetwo").html("Desktop &nbsp &nbsp &nbsp &nbsp &nbsp Documents &nbsp &nbsp &nbsp &nbsp &nbsp Downloads &nbsp &nbsp &nbsp &nbsp &nbsp Dropbox &nbsp &nbsp &nbsp &nbsp");
+				$("#linethree").html("Games &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Github &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspMusic &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Pictures");
 				$("#user1").html("kevin@yang:~$ ");
-				var type2 = new Typed("#linetwo", secondtype);
-			},
-		}
+				var second = new Typed("#linefour", secondtype);
+				self.destroy();
+			}
+		});
 		var secondtype = {
+			strings: ["cd Github"],
+			typeSpeed: 50,
+			startDelay: 1000,
+			cursorChar: "_",
+			onComplete: function(self) {
+				$("#user1").html("kevin@yang:~$ cd Github");
+				$(".shell-top-bar").html("Terminal - kevin@yang:~/Github");
+				$("#user2").html("kevin@yang:~/Github$ ");
+				var third = new Typed("#linefive", thirdtype);
+				self.destroy();
+			},
+		};
+		var thirdtype = {
 			strings: ["ls"],
 			typeSpeed: 50,
-			startDelay: 1800
-		}
-		var type1 = new Typed("#lineone", firsttype);
+			startDelay: 1000,
+			cursorChar: "_",
+			onComplete: function(self) {
+				$(".shell-top-bar").html("Terminal - kevin@yang:~/Github/keyaa.github.io");
+				$("#user3").html("kevin@yang:~/Github/keyaa.github.io$ ");
+			},
+		};
 	</script>
 </body> 
 </html> 

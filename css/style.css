@@ -1,5 +1,13 @@
 body {
+	font-size: 18px;
 	background-color: black;
+}
+
+#linetwo {
+	color: #85c1e9;
+}
+#linethree {
+	color: #85c1e9;
 }
 
 .shell-wrap {
