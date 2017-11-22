@@ -1,39 +1,47 @@
 <!doctype html>
 <html> 
 <head> 
-	<title>kevin yang</title> 
+	<title>Terminal</title> 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="icon" href="img/terminal.ico">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script src="js/typed.js/lib/typed.min.js" type="text/javascript"></script>
 	<meta charset="UTF-8">
+	<script>
+		function load()
+		{
+			window.location.href = "actual.html";
+		}
+	</script>
 </head> 
 <body> 
 	<!-- css shell from: https://guides.codechewing.com/mac-terminal-shell-css-html -->
 	<div class="shell-wrap">
 		<p class="shell-top-bar">Terminal - kevin@yang:~</p>
 		<ul class="shell-body">
-			<span id="user0">kevin@yang:~$ </span><span id="lineone"></span>
-			<br>
-			<span id="linetwo"></span>
-			<br>
-			<span id="linethree"></span>
-			<br>
-			<span id="user1"></span><span id="linefour"></span>
-			<br>
-			<span id="user2"></span><span id="linefive"></span>
-			<br>
-			<span id="user3"></span><span id="linesix"></span>
-			<br>
-			<span id="lineseven"></span>
-			<br>
+			<span id="user0">kevin@yang:~$ </span><span id="lineone"></span><br>
+			<span id="linetwo"></span><br>
+			<span id="linethree"></span><br>
+			<span id="user1"></span><span id="linefour"></span><br>
+			<span id="user2"></span><span id="linefive"></span><br>
+			<span id="user3"></span><span id="linesix"></span><br>
+			<span id="actualhtml"></span>
+			<span id="CNAME"></span>
+			<span id="css"></span>
+			<span id="doc"></span><br>
+			<span id="img"></span>
+			<span id="indexhtml"></span>
+			<span id="js"></span>
+			<span id="READMEmd"></span><br>
+			<span id="user4"></span><span id="lineseven"></span><br>
+			<span id="user5"></span>
 		</ul>
 	</div>
 	<!-- typing effect from https://github.com/mattboldt/typed.js/ -->
 	<script>
 		var firsttype = new Typed("#lineone", {
 			strings: ["ls"],
-			typeSpeed: 75,
+			typeSpeed: 70,
 			startDelay: 800,
 			cursorChar: "_",
 			onComplete: function(self) {
@@ -51,7 +59,7 @@
 			startDelay: 1000,
 			cursorChar: "_",
 			onComplete: function(self) {
-				$("#user1").html("kevin@yang:~$ cd Github");
+				$("#user1").html("kevin@yang:~$ cd Github/");
 				$(".shell-top-bar").html("Terminal - kevin@yang:~/Github");
 				$("#user2").html("kevin@yang:~/Github$ ");
 				var third = new Typed("#linefive", thirdtype);
@@ -59,15 +67,52 @@
 			},
 		};
 		var thirdtype = {
-			strings: ["ls"],
-			typeSpeed: 50,
+			strings: ["cd keyaa.github.io"],
+			typeSpeed: 30,
 			startDelay: 1000,
 			cursorChar: "_",
 			onComplete: function(self) {
 				$(".shell-top-bar").html("Terminal - kevin@yang:~/Github/keyaa.github.io");
+				$("#user2").html("kevin@yang:~/Github$ cd keyaa.github.io/");
 				$("#user3").html("kevin@yang:~/Github/keyaa.github.io$ ");
+				var fourth = new Typed("#linesix", fourthtype);
+				self.destroy();
 			},
 		};
+		var fourthtype = {
+			strings: ["ls"],
+			typeSpeed: 70,
+			startDelay: 1000,
+			cursorChar: "_",
+			onComplete: function(self) {
+				$("#user3").html("kevin@yang:~/Github/keyaa.github.io$ ls");
+				$("#user4").html("kevin@yang:~/Github/keyaa.github.io$ ");
+				$("#actualhtml").html("actual.html &nbsp &nbsp &nbsp");
+				$("#CNAME").html("CNAME &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp");
+				$("#css").html("css &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp");
+				$("#doc").html("doc &nbsp &nbsp &nbsp &nbsp &nbsp");
+				$("#img").html("img &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp");
+				$("#indexhtml").html("index.html &nbsp &nbsp &nbsp &nbsp &nbsp");
+				$("#js").html("js &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp");
+				$("#READMEmd").html("README.md");
+				var fifth = new Typed("#lineseven", fifthtype);
+				self.destroy();
+			},
+		};
+		var fifthtype = {
+			strings: ["xdg-open index.html"],
+			typeSpeed: 40,
+			startDelay: 1000,
+			cursorChar: "_",
+			onComplete: function(self) {
+				$("#user4").html("kevin@yang:~/Github/keyaa.github.io$ xdg-open index.html");
+				$("#user5").html("kevin@yang:~/Github/keyaa.github.io$ _");
+				self.destroy();
+			},
+		};
+		setTimeout(function() { 
+			load();	// redirects to actual webpage
+		}, 10000);
 	</script>
 </body> 
 </html> 
