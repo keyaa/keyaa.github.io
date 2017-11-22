@@ -1,60 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <link rel="icon" href="img/favicon.ico">
-    <title>Kevin Yang</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <!-- Javascript Animations -->
-    <script src="js/anime.min.js"></script>
-  </head>
-  <body style="background-color: black">
-    <header class="centerHeader">
-    <img style= "border-radius: 50%;max-width:150px;" src="img/me.jpg"></img>
-    <h1>Kevin Yang</h1>
-      <div class="tooltip">
-        <a href="https://www.linkedin.com/in/kevin-yang-boulder/"><img src="img/LinkedIn.png" class="icon"></img></a>
-         <span style="color: #007BB6" class="tooltiptext">LinkedIn</span>
-      </div>
-      &nbsp;
-      <div class="tooltip">
-        <a href="https://github.com/keyaa"><img src="img/Github.png" class="icon"></img></a>
-        <span style="color: #FFFFFF" class="tooltiptext">Github</span>
-      </div>
-      &nbsp;
-      <div class="tooltip">
-        <a href="mailto:Kevin.Yang-2@colorado.edu" target="_top"><img src="img/Email.png" class="icon"></img></a>
-        <span style="color: #F89A1E" class="tooltiptext">Email</span>
-      </div>
-      &nbsp;
-      <div class="tooltip">
-        <a href="doc/resume.pdf"><img src="img/Resume.png" class="icon"></img></a>
-        <span style="color: #FF6666" class="tooltiptext">Resume</span>
-      </div>
-      <br><br>
-      <hr></hr>
-    </header>
-      <p class="info">Hi, I'm Kevin Yang, an aspiring software engineer currently studying at CU Boulder! I'm  pursuing a BS degree in Computer Science, and a minor in Information Science.</p>
-      <br>
-      <div class="info">
-        <a href="http://www.colorado.edu/"><img src="img/CU Boulder Buffalo.png" width="20%"></img></a>
-      </div>
-      <br>
-      <video width="200" style="float:right;margin:5px 300px 10px 10px;"autoplay muted loop>
-        <source src="img/dab.mp4" type="video/mp4">
-        Your browser does not support HTML5 video :(
-      </video>
-      <p class="info" style="text-align:left;">I enjoy playing badminton, video games, and chess.<br>I also like swimming, as well as <a href="https://www.reddit.com/r/MechanicalKeyboards/">staring at mechanical keyboards</a>,<br>and risking injury for <a href="https://en.wikipedia.org/wiki/Dab_(dance)">dumb trends.</a></p>
-      <br><br>
-      <div class="info" style="left:20px;text-align:center;">
-        <h2 class="info">Here are some of my projects:</h2>
-      </div>
-      <br>
-      <div class="info" style="right:150px;max-width:600px">
-        <a target=_blank href="http://kywelco.me/tic-tac-toe/"><img src="img/tictactoe.png" width="20%"></img></a>
-        <a target=_blank href="http://kywelco.me/osu-stream-practice"><img src="osu-stream-practice/img/osuHand.png" width="20%"></img></a>
-      </div>
-      </div>
-    <canvas class="fireworks"></canvas>
-    <script src="js/app.js"></script>
-  </body>
-</html>
+<!doctype html>
+<html> 
+<head> 
+	<title>kevin yang</title> 
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" href="img/terminal.ico">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="js/typed.js/lib/typed.min.js" type="text/javascript"></script>
+</head> 
+<body> 
+	<!-- css shell from: https://guides.codechewing.com/mac-terminal-shell-css-html -->
+	<div class="shell-wrap">
+		<p class="shell-top-bar">Terminal - kevin@yang:~</p>
+		<ul class="shell-body">
+			<span id="user0">kevin@yang:~$ </span><span id="lineone"></span>
+			<br>
+			<span id="user1"></span><span id="linetwo"></span>
+			<br>
+			<span id="user2"></span><span id="linethree"></span>
+			<br>
+			<span id="user3"></span><span id="linefour"></span>
+			<br>
+		</ul>
+	</div>
+	<!-- typing effect from https://github.com/mattboldt/typed.js/ -->
+	<script>
+		var firsttype = {
+			strings: ["cd Desktop"],
+			typeSpeed: 50,
+			startDelay: 750,
+			cursorChar: "_",
+			onComplete: function(self) {
+				$("#user1").html("kevin@yang:~$ ");
+				var type2 = new Typed("#linetwo", secondtype);
+			},
+		}
+		var secondtype = {
+			strings: ["ls"],
+			typeSpeed: 50,
+			startDelay: 1800
+		}
+		var type1 = new Typed("#lineone", firsttype);
+	</script>
+</body> 
+</html> 
