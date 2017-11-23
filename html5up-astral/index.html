@@ -34,8 +34,14 @@
 						<!-- Me -->
 							<article id="me" class="panel">
 								<header>
-								<img style="position:relative;display:inline;margin:0 auto;top:25%;left:65%;border-radius:50%;max-width:200px;" 
-								src="images/me.jpg"/>
+								<img id="profilepic" src="images/me.jpg"/>
+								<style>
+								@media only screen and (max-width: 700px) {
+									#profilepic {
+										left:0%;
+									}
+							  	}
+								</style>
 									<h1>Kevin Yang</h1>
 									<p>Computer/Information Science Student</p>
 								</header>
