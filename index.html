@@ -116,11 +116,11 @@
 				$("#user5").html("kevin@yang:~/Github/keyaa.github.io$ xdg-open index.html");
 				$("#user6").html("kevin@yang:~/Github/keyaa.github.io$ _");
 				self.destroy();
+				setTimeout(function() { 
+					load();	// redirects to actual webpage
+				}, 500);
 			},
 		}
-		setTimeout(function() { 
-			load();	// redirects to actual webpage
-		}, 12500);
 	</script>
 </body> 
 </html> 
