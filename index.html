@@ -1,4 +1,4 @@
-<!doctype html>
+!doctype html>
 <html> 
 <head> 
 	<title>Terminal</title> 
@@ -40,8 +40,8 @@
 	<script>
 		var firsttype = new Typed("#lineone", {
 			strings: ["ls"],
-			typeSpeed: 70,
-			startDelay: 1000,
+			typeSpeed: 30,
+			startDelay: 500,
 			cursorChar: "_",
 			onComplete: function(self) {
 				$("#user0").html("kevin@yang:~$ ls");
@@ -54,8 +54,8 @@
 		});
 		var secondtype = {
 			strings: ["cd Github"],
-			typeSpeed: 50,
-			startDelay: 1000,
+			typeSpeed: 30,
+			startDelay: 200,
 			cursorChar: "_",
 			onComplete: function(self) {
 				$("#user1").html("kevin@yang:~$ cd Github/");
@@ -67,8 +67,8 @@
 		};
 		var thirdtype = {
 			strings: ["cd keyaa.github.io"],
-			typeSpeed: 50,
-			startDelay: 1000,
+			typeSpeed: 30,
+			startDelay: 200,
 			cursorChar: "_",
 			onComplete: function(self) {
 				$(".shell-top-bar").html("Terminal - kevin@yang:~/Github/keyaa.github.io");
@@ -80,8 +80,8 @@
 		};
 		var fourthtype = {
 			strings: ["ls"],
-			typeSpeed: 70,
-			startDelay: 1000,
+			typeSpeed: 30,
+			startDelay: 200,
 			cursorChar: "_",
 			onComplete: function(self) {
 				$("#user3").html("kevin@yang:~/Github/keyaa.github.io$ ls");
@@ -98,8 +98,8 @@
 		};
 		var fifthtype = {
 			strings: ["cd html5up-astral"],
-			typeSpeed: 50,
-			startDelay: 1000,
+			typeSpeed: 30,
+			startDelay: 500,
 			cursorChar: "_",
 			onComplete: function(self) {
 				$(".shell-top-bar").html("Terminal - kevin@yang:~/Github/keyaa.github.io/html5up-astral");
@@ -111,8 +111,8 @@
 		};
 		var sixthtype = {
 			strings: ["xdg-open index.html"],
-			typeSpeed: 50,
-			startDelay: 1000,
+			typeSpeed: 30,
+			startDelay: 200,
 			cursorChar: "_",
 			onComplete: function(self) {
 				$("#user5").html("kevin@yang:~/Github/keyaa.github.io$ xdg-open index.html");
@@ -120,7 +120,7 @@
 				self.destroy();
 				setTimeout(function() { 
 					load();	// redirects to actual webpage
-				}, 500);
+				}, 400);
 			},
 		}
 	</script>
